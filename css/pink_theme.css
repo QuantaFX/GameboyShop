@@ -1,0 +1,50 @@
+#bg1 {
+    background: #ff477e;
+}
+
+#bg2 {
+    background: #ffa0ce;
+}
+
+#screen2 {
+    background: #ff477e;
+}
+
+#movement {
+    background: #ff477e;
+}
+
+#controls {
+    background: #ff477e;
+}
+
+#redA, #redB {
+    background: #c23659;
+    box-shadow: 0px 3px #8b253e;
+}
+
+#p1, #p2, #p3, #p4, #p5, #p6 {
+    background: #ff477e;
+}
+
+.cartrige .c_bg {
+    background: #ffa0ce;
+}
+
+.cartrige .left_indent,
+.cartrige .right_indent,
+.cartrige .c_add {
+    background: #ff477e;
+}
+
+.cartrige .logo {
+    background: #ffa0ce;
+}
+
+#shop {
+    z-index: 1;
+}
+
+section {
+    z-index: 2;
+}

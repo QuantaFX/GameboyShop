@@ -1,0 +1,62 @@
+#left {
+    background: rgba(61,158,255,0.5);
+}
+
+#bg1 {
+    background: #3d9eff;
+}
+
+#bg2 {
+    background: #8dc4fa;
+}
+
+#screen2 {
+    background: #3d9eff;
+}
+
+#movement {
+    background: #3d9eff;
+}
+
+#controls {
+    background: #3d9eff;
+}
+
+#redA, #redB {
+    background: #234aaa;
+    box-shadow: 0px 3px #181b57;
+}
+
+#p1, #p2, #p3, #p4, #p5, #p6 {
+    background: #3d9eff;
+}
+
+.cartrige .c_bg {
+    background: #8dc4fa;
+}
+
+.cartrige .left_indent,
+.cartrige .right_indent,
+.cartrige .c_add {
+    background: #3d9eff;
+}
+
+.cartrige .logo {
+    background: #8dc4fa;
+}
+
+.cartrige:nth-child(1) .poster {
+    background-image: url('../images/cartrige1.png');
+}
+
+.cartrige:nth-child(2) .poster {
+    background-image: url('../images/cartrige2.png');
+}
+
+.cartrige:nth-child(3) .poster {
+    background-image: url('../images/cartrige3.png');
+}
+
+.cartrige:nth-child(4) .poster {
+    background-image: url('../images/cartrige4.png');
+}

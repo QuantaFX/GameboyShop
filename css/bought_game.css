@@ -1,0 +1,496 @@
+html, body {
+    height: 100%;
+    font-family: "Arial", sans-serif;
+    display: flow;
+    background: #F7D6BF;
+    overflow-y: hidden;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: red 1px;
+}
+
+#left, #right {
+    width: 100px;
+    height: 500px;
+    background: rgba(255, 255, 255, 0.30);
+    border: 5px solid rgba(0,0,0, 0.3);
+    border-top-color: rgba(255, 255, 255, 0.30);
+    border-left-color: rgba(255, 255, 255, 0.30);
+    border-radius: 10px;
+    margin: 0 20px;
+    box-shadow: 15px 15px rgba(112, 111, 109, 0.3);
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#left {
+    margin-right: 60px;
+    display: flex;
+    transform: translate(0px, -30px);
+}
+
+#left a {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 4px solid rgba(0,0,0, 0.3);
+}
+
+#left a:hover {
+    transform: scale(1.2);
+}
+
+#theme1 {
+    background: cornflowerblue;
+}
+
+#theme2 {
+    background: #ff477e;
+}
+
+#theme3 {
+    background: grey;
+}
+
+#shop {
+    margin-left: 100px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 50px;
+    transform: translate(0px, -30px);
+}
+
+#right {
+    margin-left: 40px;
+}
+
+@keyframes slideUp {
+    to { transform: translateY(150px); }
+}
+
+section {
+    margin-top: 80px;
+    background: white;
+    width: 400px;
+    height: 650px;
+    border-radius: 30px;
+    border-bottom-right-radius: 20%;
+    position: relative;
+    border: black 6px solid;
+    transform: translateY(1000px);
+
+    animation: slideUp 2s ease-out forwards;
+}
+
+#shadow {
+    opacity: 0.2;
+    background: black;
+    width: 400px;
+    height: 650px;
+    border-radius: 30px;
+    border-bottom-right-radius: 20%;
+    margin: 30px 0 0 30px;
+}
+
+.line {
+    height: 6px;
+    background: black;
+}
+
+#bg1 {
+    background: #797979;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 390px;
+    height: 640px;
+    border-radius: 20px;
+    border-bottom-right-radius: 19.5%;
+    border-top-right-radius: 2%;
+    border-bottom-left-radius: 2%;
+}
+
+#bg2 {
+    background: #CCCC;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 385px;
+    height: 635px;
+    border-radius: 20px;
+    border-bottom-right-radius: 19.5%;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+#screen {
+    position: absolute;
+    background: #908C92;
+    width: 320px;
+    height: 250px;
+    left: 35px;
+    top: 60px;
+    border-radius: 10px;
+    border-bottom-right-radius: 22.5%;
+    border: black 6px solid;
+}
+
+#screen2 {
+    position: absolute;
+    background: #908C92;
+    top: 2px;
+    left: 2px;
+    width: 318px;
+    height: 248px;
+    border-radius: 10px;
+    border-bottom-right-radius: 22.5%;
+    box-shadow: -2px -2px white;
+}
+
+#Game1 {
+    background: #4E5A35;
+    position: absolute;
+    height: 180px;
+    width: 210px;
+    top: 25px;
+    left: 55px;
+    border: black 6px solid;
+    border-radius: 5%;
+}
+
+#Game2 {
+    background: #819757;
+    position: absolute;
+    height: 175px;
+    width: 205px;
+    top: 4px;
+    left: 4px;
+}
+
+#div1 {
+    width: 400px;
+    position: absolute;
+    top: 35px;
+}
+
+#div2 {
+    width: 40px;
+    position: absolute;
+    right: 15px;
+    top: 12px;
+    transform: rotateZ(90deg);
+}
+
+#div3 {
+    width: 40px;
+    position: absolute;
+    left: 15px;
+    top: 12px;
+    transform: rotateZ(90deg);
+}
+
+#div4 {
+    width: 70px;
+    position: absolute;
+    top: 340px;
+    left: 35px;
+    border-radius: 50px;
+}
+
+#div5 {
+    width: 120px;
+    position: absolute;
+    top: 340px;
+    left: 110px;
+    border-radius: 50px;
+}
+
+#div6 {
+    width: 15px;
+    position: absolute;
+    top: 340px;
+    left: 235px;
+    border-radius: 50px;
+}
+
+#div7 {
+    width: 85px;
+    position: absolute;
+    top: 70px;
+    left: 50px;
+    border-radius: 50px;
+    height: 5px;
+}
+
+#div8 {
+    width: 85px;
+    position: absolute;
+    top: 80px;
+    left: 50px;
+    border-radius: 50px;
+    height: 5px;
+}
+
+#div9 {
+    width: 165px;
+    position: absolute;
+    top: 75px;
+    left: 140px;
+    border-radius: 50px;
+}
+
+#div10 {
+    width: 45px;
+    position: absolute;
+    top: 70px;
+    right: 45px;
+    border-radius: 50px;
+    height: 5px;
+}
+
+#div11 {
+    width: 45px;
+    position: absolute;
+    top: 80px;
+    right: 45px;
+    border-radius: 50px;
+    height: 5px;
+}
+
+#div12 {
+    width: 40px;
+    position: absolute;
+    top: 180px;
+    left: 50px;
+    border-radius: 50px;
+}
+
+#dot {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background: black;
+    border-radius: 50%;
+    top: 150px;
+    left: 55px;
+}
+
+#red {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    background: red;
+    border-radius: 50%;
+    top: 155px;
+    left: 60px;
+    box-shadow: -1px -1px white;
+}
+
+#movement {
+    width: 120px;
+    height: 120px;
+    background: #B5B1AE;
+    position: absolute;
+    border-radius: 50%;
+    bottom: 130px;
+    left: 25px;
+    box-shadow: -1px -1px #706F6D;
+}
+
+#controls {
+    width: 130px;
+    height: 60px;
+    background: #B5B1AE;
+    position: absolute;
+    border-radius: 70px;
+    bottom: 160px;
+    right: 25px;
+    box-shadow: -1px -1px #706F6D;
+    transform: rotateZ(-30deg);
+}
+
+.button {
+    height: 42px;
+    width: 42px;
+    background: white;
+    border-radius: 50%;
+    position: absolute;
+    border: 5px solid black;
+}
+
+#A {
+    bottom: 147px;
+    right: 95px;
+}
+
+#B {
+    bottom: 182px;
+    right: 34px;
+}
+
+.btn_red {
+    height: 40px;
+    width: 43px;
+    background: #97275F;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.btn_red:focus {
+    height: 36px;
+}
+
+#redA {
+    bottom: 155px;
+    right: 99px;
+    box-shadow: 0px 3px #571839;
+}
+
+#redB {
+    bottom: 190px;
+    right: 38px;
+    box-shadow: 0px 3px #571839;
+}
+
+.btn {
+    position: absolute;
+    background: black;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+}
+
+#dotA {
+    bottom: 135px;
+    right: 90px;
+}
+
+#dotB {
+    bottom: 170px;
+    right: 30px;
+}
+
+.bar {
+    position: absolute;
+    background: white;
+    width: 45px;
+    height: 3px;
+    border-radius: 50px;
+    border: black 5px solid;
+    transform: rotateZ(-30deg);
+}
+
+#bar1 {
+    bottom: 100px;
+    left: 110px;
+}
+
+#bar2 {
+    bottom: 100px;
+    left: 180px;
+}
+
+#line1 {
+    position: absolute;
+    width: 45px;
+    bottom: 85px;
+    left: 125px;
+    border-radius: 50px;
+    transform: rotateZ(-30deg);
+}
+
+#line2 {
+    position: absolute;
+    width: 45px;
+    bottom: 85px;
+    left: 195px;
+    border-radius: 50px;
+    transform: rotateZ(-30deg);
+}
+
+.pattern {
+    width: 70px;
+    height: 10px;
+    position: absolute;
+    transform: rotateZ(60deg);
+    background: #999795;
+    border-radius: 50px;
+    box-shadow: -1px 1px black;
+}
+
+#p1 {
+    bottom: 40px;
+    right: 105px;
+}
+
+#p2 {
+    bottom: 50px;
+    right: 85px;
+}
+
+#p3 {
+    bottom: 60px;
+    right: 65px;
+}
+
+#p4 {
+    bottom: 70px;
+    right: 45px;
+}
+
+#p5 {
+    bottom: 80px;
+    right: 25px;
+}
+
+#p6 {
+    bottom: 90px;
+    right: 5px;
+}
+
+.arrow {
+    bottom: 140px;
+    left: 65px;
+    position: absolute;
+    background: white;
+    border: 5px solid black;
+    height: 90px;
+    width: 30px;
+    border-radius: 5px;
+}
+
+#a2 {
+    transform: rotateZ(90deg);
+}
+
+.cover {
+    bottom: 144px;
+    left: 71px;
+    position: absolute;
+    background: black;
+    height: 90px;
+    width: 30px;
+    border-radius: 0px;
+}
+
+#c2 {
+    transform: rotateZ(90deg);
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Gruppo';
+    font-size: 40px;
+}
