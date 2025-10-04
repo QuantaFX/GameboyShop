@@ -3,106 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scroll Timeline Showcase</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: system-ui, sans-serif;
-            background: #111;
-            color: white;
-            overflow-x: hidden;
-        }
-
-        section {
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 2rem;
-            position: relative;
-        }
-
-        /* 1. Basic scroll-linked fade-in */
-        @scroll-timeline fade-scroll {
-            source: auto;
-            orientation: block;
-            scroll-offsets: (0%, 100%);
-        }
-
-        .fade {
-            opacity: 0;
-            animation: fadeIn 1s linear forwards;
-            animation-timeline: fade-scroll;
-            animation-range: 0% 100%;
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(50px); }
-            to   { opacity: 1; transform: translateY(0); }
-        }
-
-        /* 2. Rotate as you scroll */
-        @scroll-timeline rotate-scroll {
-            source: auto;
-            scroll-offsets: (0%, 100%);
-        }
-
-        .rotate {
-            width: 150px;
-            height: 150px;
-            background: #ff477e;
-            border-radius: 20px;
-            animation: spin 1s linear forwards;
-            animation-timeline: rotate-scroll;
-            animation-range: 0% 100%;
-        }
-
-        @keyframes spin {
-            from { transform: rotate(0deg) scale(0.5); }
-            to   { transform: rotate(720deg) scale(1); }
-        }
-
-        /* 3. Progress bar at top */
-        @scroll-timeline progress-scroll {
-            source: auto;
-            scroll-offsets: (0%, 100%);
-        }
-
-        .progress {
-            position: fixed;
-            top: 0;
-            left: 0;
-            height: 5px;
-            background: #00f0ff;
-            animation: grow 1s linear forwards;
-            animation-timeline: progress-scroll;
-            animation-range: 0% 100%;
-            z-index: 1000;
-        }
-
-        @keyframes grow {
-            from { width: 0%; }
-            to   { width: 100%; }
-        }
-
-    </style>
+    <style>@import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');</style>
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
+    <h1>scroll down</h1>
 
-<!-- Scroll progress bar -->
-<div class="progress"></div>
+    <div id="loading_bar"></div>
+    <div class="cover" id="cover_r"></div>
+    <div class="cover" id="cover_l"></div>
+    <div id="loading_border"></div>
 
-<section style="background:#222">
-    <div class="fade">Scroll Down 👇</div>
-</section>
-
-<section style="background:#333">
-    <div class="rotate"></div>
-</section>
-
-<section style="background:#444">
-    <div class="fade">You reached the end 🎉</div>
-</section>
-
+    <div id="button">
+        <a href="game_grey.html" id="play_btn"></a>
+    </div>
 </body>
 </html>

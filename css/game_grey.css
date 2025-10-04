@@ -1,8 +1,8 @@
 html, body {
-    height: 100%;
     font-family: "Arial", sans-serif;
     display: flow;
     background: #F7D6BF;
+    overflow-y: hidden;
 }
 
 body {
@@ -63,16 +63,28 @@ body {
     background: grey;
 }
 
+@keyframes slideFromLeft {
+    0% { transform: translateX(1000px) }
+    100% { transform: translateX(0px) }
+}
+
 #shop {
     margin-left: 100px;
     display: grid;
     grid-template-columns: auto auto;
     grid-gap: 50px;
     transform: translate(0px, -30px);
+
+    animation: slideFromLeft 2s ease forwards;
 }
 
 #right {
     margin-left: 40px;
+}
+
+@keyframes slideIn {
+    0% { transform: translateY(1000px) }
+    100% { transform: translateY(0px) }
 }
 
 section {
@@ -84,6 +96,8 @@ section {
     border-bottom-right-radius: 20%;
     position: relative;
     border: black 6px solid;
+
+    animation: slideIn 1s ease forwards;
 }
 
 #shadow {
