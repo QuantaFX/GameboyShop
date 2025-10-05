@@ -1,4 +1,12 @@
-html, body {
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    z-index: 0;
+}
+
+html,
+body {
     height: 3000px;
     width: 100vw;
     margin: 0;
@@ -14,10 +22,12 @@ html, body {
         transform: scale(1);
         opacity: .8;
     }
+
     60% {
         transform: scale(1.1);
         opacity: 0.4;
     }
+
     100% {
         transform: scale(1);
         opacity: 1;
@@ -35,9 +45,17 @@ h1 {
 }
 
 @keyframes play {
-    0%   {opacity: 0%}
-    85%  {opacity: 0%}
-    100% {opacity: 100%}
+    0% {
+        opacity: 0%
+    }
+
+    85% {
+        opacity: 0%
+    }
+
+    100% {
+        opacity: 100%
+    }
 }
 
 #button {
@@ -86,20 +104,55 @@ h1 {
 }
 
 @keyframes slideIn {
-    0%   {transform: translateX(0)}
-    80%  {transform: translateX(calc(50vw)); opacity: 100%}
-    84%  {transform: translateX(calc(50vw)); opacity: 100%}
-    85%  {transform: translateX(calc(50vw)); opacity: 0%}
-    100% {transform: translateX(calc(50vw)); opacity: 0%}
+    0% {
+        transform: translateX(0)
+    }
+
+    80% {
+        transform: translateX(calc(50vw));
+        opacity: 100%
+    }
+
+    84% {
+        transform: translateX(calc(50vw));
+        opacity: 100%
+    }
+
+    85% {
+        transform: translateX(calc(50vw));
+        opacity: 0%
+    }
+
+    100% {
+        transform: translateX(calc(50vw));
+        opacity: 0%
+    }
 }
 
 @keyframes appear {
-    0%   {opacity: 0%}
-    10%  {opacity: 100%}
-    80%  {opacity: 100%}
-    84%  {opacity: 100%}
-    85%  {opacity: 0%}
-    100% {opacity: 0%}
+    0% {
+        opacity: 0%
+    }
+
+    10% {
+        opacity: 100%
+    }
+
+    80% {
+        opacity: 100%
+    }
+
+    84% {
+        opacity: 100%
+    }
+
+    85% {
+        opacity: 0%
+    }
+
+    100% {
+        opacity: 0%
+    }
 }
 
 
@@ -137,3 +190,31 @@ h1 {
     animation-timeline: scroll(root);
 }
 
+nav {
+    display: flex;
+    width: 100vw;
+    height: 15vh;
+    justify-content: space-around;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    font-size: 1.25rem;
+
+    a {
+        color: black;
+        text-decoration: none;
+    }
+}
+
+#nav-main {
+    display: flex;
+    width: 60vw;
+    justify-content: space-evenly;
+}
+
+#nav-left {
+    width: 10em;
+    background-color: red;
+}
