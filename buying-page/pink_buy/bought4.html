@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../../css/pink_theme.css">
 </head>
 <body>
-<div id="center">
+<div id="animation">
     <section style="z-index: 2">
         <div id="border"></div>
 
@@ -103,6 +103,60 @@
             <div class="logo"></div>
             <div class="poster" style="background-image: url('../../images/cartrige4.png')"></div>
         </div>
+    </div>
+</div>
+<div id="checkout">
+    <div id="pay-window">
+        <div class="payment-header">
+            <h2 class="payment-title">Complete Purchase</h2>
+            <p class="payment-subtitle">Choose your payment method</p>
+        </div>
+        <div class="payment-options">
+            <a href="#" class="payment-button apple-pay">
+                <i class="fa fa-apple" style="font-size:24px"></i>
+                Pay with Apple Pay
+            </a>
+
+            <a href="#" class="payment-button google-pay">
+                <i class="fa fa-google" style="font-size:24px"></i>
+                Pay with Google Pay
+            </a>
+        </div>
+
+        <div class="payment-divider">
+            <span id="divide">or pay with card</span>
+        </div>
+
+        <form class="bank-form">
+            <div class="form-group">
+                <label class="form-label">Card Number</label>
+                <input type="text" class="form-input" placeholder="1234 5678 9012 3456" maxlength="19">
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label class="form-label">Expiry Date</label>
+                    <input type="text" class="form-input" id="exp-date" placeholder="MM/YY" maxlength="5">
+                </div>
+                <div class="form-group">
+                    <label class="form-label">CVV</label>
+                    <input type="text" class="form-input" id="cvv" placeholder="123" maxlength="3">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">Cardholder Name</label>
+                <input type="text" class="form-input" placeholder="John Doe">
+            </div>
+
+            <button type="submit" class="pay-button">Complete Payment</button>
+        </form>
+    </div>
+</div>
+
+<div class="fullscreen-warning">
+    <div>
+        <p>⚠️ Please switch to fullscreen or use a desktop for the best experience.</p>
     </div>
 </div>
 </body>
