@@ -1,5 +1,5 @@
 :root {
-    --background-color: #F7D6BF;
+    --background-color: #F0EFF4;
     --secondary-background-color: #9f958e;
     --primary-color: #819757;
     --secondary-color: #819757;
@@ -7,7 +7,7 @@
     --text-dark: #2E2E2E;
     --text-light: #F5F5F5;
     --border-color: #5D4037;
-    --card-bg: #FFEFD5;
+    --card-bg: #F0EFF4;
     --nav-bg: #bbbbbb;
     --footer-bg: #bbbbbb;
 }
