@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'ByteBounce';
+    src: url('../images/ByteBounce.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Game_Paused';
+    src: url('../images/Game_Paused.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
