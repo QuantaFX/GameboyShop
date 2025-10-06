@@ -1,12 +1,13 @@
 :root {
     --background-color: #F7D6BF;
-    --primary-color: #8B4513;
-    --secondary-color: #9ACD32;
-    --accent-color: #CD5C5C;
+    --secondary-background-color: #9f958e;
+    --primary-color: #819757;
+    --secondary-color: #819757;
+    --accent-color: #97275f;
     --text-dark: #2E2E2E;
     --text-light: #F5F5F5;
     --border-color: #5D4037;
     --card-bg: #FFEFD5;
-    --nav-bg: rgba(247, 214, 191, 0.95);
-    --footer-bg: #8B4513;
+    --nav-bg: #bbbbbb;
+    --footer-bg: #9f958e;
 }

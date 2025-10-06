@@ -10,14 +10,19 @@
 
 html,
 body {
-    height: 3000px;
     width: 100vw;
     margin: 0;
     padding: 0;
     font-family: "Arial", sans-serif;
     display: flow;
-    background: var(--background-color);
     overflow-x: hidden;
+}
+
+main {
+    background-color: #e5e5f7;
+    opacity: 0.8;
+    background: radial-gradient(circle, transparent 20%, #e5e5f7 20%, #e5e5f7 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #e5e5f7 20%, #e5e5f7 80%, transparent 80%, transparent) 25px 25px, linear-gradient(#bbbbbb 2px, transparent 2px) 0 -1px, linear-gradient(90deg, #bbbbbb 2px, #e5e5f7 2px) -1px 0;
+    background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
 }
 
 @keyframes shine {
@@ -195,21 +200,34 @@ h1 {
 
 nav {
     display: flex;
+    position: sticky;
+    top: 0;
     width: 100vw;
     height: 17vh;
     justify-content: space-around;
+    background-color: var(--nav-bg);
+    box-shadow: 0 -2px 10px 0 rgba(0, 0, 0, 0.2);
 }
 
 .nav-container {
     display: flex;
     align-items: center;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
+    font-family: 'Game_Paused', regular;
 
     a {
         color: black;
         text-decoration: none;
+
+    }
+
+    a:hover {
+        color: var(--primary-color);
+        animation: shine 2s ease-in-out infinite;
+        transition: 0.3s;
     }
 }
+
 
 #nav-main {
     display: flex;
@@ -219,6 +237,7 @@ nav {
 
 #nav-left {
     width: 10em;
+    margin-right: 2em;
 }
 
 #nav-logo {
@@ -234,12 +253,25 @@ footer {
     width: 100vw;
     display: flex;
     flex-direction: column;
+    background-color: var(--footer-bg);
+
+    a {
+        /* color: var(--text-light); */
+        color: black;
+        text-decoration: none;
+    }
+}
+
+#footer-logo {
+    margin: 0em 3em;
 }
 
 #footer-main {
     height: 90%;
-    width: 100%;
+    width: 80vw;
     display: flex;
+    justify-content: space-around;
+    margin-top: 1em;
 }
 
 #footer-bottom {
@@ -252,13 +284,9 @@ footer {
     flex-direction: column;
 }
 
-.footer-container {
-    display: flex;
-    justify-content: space-around;
-}
-
 #footer-bottom {
     margin: 0em 3em;
+    height: 100%;
 }
 
 .fullscreen-warning {
@@ -274,7 +302,8 @@ footer {
     z-index: 9999;
 }
 
-@media (max-width: 1024px), (max-height: 700px) {
+@media (max-width: 1024px),
+(max-height: 700px) {
     .fullscreen-warning {
         display: flex;
         background: #000;
@@ -285,19 +314,29 @@ footer {
         pointer-events: none;
     }
 }
+
 @keyframes gradientBG {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
+
 .hero h1 {
-  font-size: 3rem;
-  margin: 0 0 1rem;
-  background: linear-gradient(45deg, var(--accent-color), var(--primary-color), var(--secondary-color), var(--accent-color));
-  background-size: 300% 300%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: gradientBG 5s ease infinite;
+    font-size: 3rem;
+    margin: 0 0 1rem;
+    background: linear-gradient(45deg, var(--accent-color), var(--primary-color), var(--secondary-color), var(--accent-color));
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientBG 5s ease infinite;
 }
 
 .hero {
@@ -310,6 +349,10 @@ footer {
 .hero-content p {
     margin: 0 0 1rem;
     font-size: 1.125rem;
+}
+
+.hero-content {
+    display: flex;
 }
 
 .hero .btn {
@@ -348,7 +391,7 @@ footer {
     border-radius: 6px;
     overflow: hidden;
     text-align: center;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .product-card img {
@@ -391,7 +434,7 @@ footer {
     border-radius: 6px;
     padding: 1rem;
     text-align: center;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .testimonial-card p {
